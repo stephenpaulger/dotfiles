@@ -9,9 +9,6 @@ compinit
 promptinit
 prompt adam2
 
-sme=/home/accountis/sme
-cd ~sme/hub
-
 alias ll="ls -l"
 alias ls="ls --ignore=\*pyc --color"
 
