@@ -9,12 +9,24 @@ compinit
 promptinit
 prompt adam2
 
+sme=/home/accountis/sme
+cd ~sme/hub
+
 alias ll="ls -l"
 alias ls="ls --ignore=\*pyc --color"
 
-bindkey "\e[1~" beginning-of-line # Home
-bindkey "\e[4~" end-of-line # End
-bindkey "\e[3~" delete-char # Del
-bindkey "^[[A" history-search-backward
-bindkey "^[[B" history-search-forward
-bindkey ^R history-incremental-search-backward
+autoload zkbd
+[[ ! -f ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE ]] && zkbd
+source ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE
+
+[[ -n ${key[Backspace]} ]] && bindkey "${key[Backspace]}" backward-delete-char
+[[ -n ${key[Insert]} ]] && bindkey "${key[Insert]}" overwrite-mode
+[[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
+[[ -n ${key[PageUp]} ]] && bindkey "${key[PageUp]}" up-line-or-history
+[[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
+[[ -n ${key[End]} ]] && bindkey "${key[End]}" end-of-line
+[[ -n ${key[PageDown]} ]] && bindkey "${key[PageDown]}" down-line-or-history
+[[ -n ${key[Up]} ]] && bindkey "${key[Up]}" up-line-or-search
+[[ -n ${key[Left]} ]] && bindkey "${key[Left]}" backward-char
+[[ -n ${key[Down]} ]] && bindkey "${key[Down]}" down-line-or-search
+[[ -n ${key[Right]} ]] && bindkey "${key[Right]}" forward-char
