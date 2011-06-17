@@ -9,6 +9,8 @@ compinit
 promptinit
 prompt adam2
 
+precmd ()  { print -Pn "\e]0;%n@%m: %~\a" }
+
 alias ll="ls -l"
 alias ls="ls --ignore=\*pyc --color"
 
