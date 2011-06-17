@@ -14,6 +14,8 @@ zstyle ':completion:*' list-colors $LS_COLORS
 sme=/home/accountis/sme
 cd ~sme/hub
 
+precmd ()  { print -Pn "\e]0;%n@%m: %~\a" }
+
 alias ll="ls -l"
 alias ls="ls --ignore=\*pyc --color"
 
