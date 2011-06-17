@@ -9,6 +9,8 @@ compinit
 promptinit
 prompt adam2
 
+zstyle ':completion:*' list-colors $LS_COLORS
+
 sme=/home/accountis/sme
 cd ~sme/hub
 
