@@ -9,6 +9,7 @@ augroup END
 " Hide pyc files
 let g:netrw_list_hide='.*\.pyc$' 
 
+
 " == Editing ====================================
 syntax on
 set ruler
@@ -26,6 +27,15 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+
+
+" == GVIM =======================================
+set toolbar=""
+colorscheme desert
+
+
+" == XML ========================================
+ru macros/matchit.vim
 
 
 " == Python =====================================
