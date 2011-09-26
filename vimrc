@@ -30,7 +30,7 @@ set hlsearch
 
 
 " == GVIM =======================================
-set toolbar=""
+set guioptions-=T
 colorscheme desert
 
 
