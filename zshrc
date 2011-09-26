@@ -19,6 +19,11 @@ precmd ()  { print -Pn "\e]0;%n@%m: %~\a" }
 alias ll="ls -l"
 alias ls="ls --ignore=\*pyc --color"
 
+alias -g diffc="colordiff|less -R"
+
+alias -s html=vim
+alias -s log="tail -f"
+
 autoload zkbd
 [[ ! -f ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE ]] && zkbd
 source ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE
