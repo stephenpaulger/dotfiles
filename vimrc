@@ -25,6 +25,7 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+nnoremap <esc> :noh<return><esc>
 
 " == GVIM =======================================
 set guioptions-=T
@@ -33,5 +34,5 @@ colorscheme desert
 " == XML ========================================
 ru macros/matchit.vim
 
-" == Position Restore ============================
+" == Position Restore ===========================
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
