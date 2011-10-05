@@ -16,3 +16,5 @@ map <F5> :!python %<cr>
 
 " Add site-packages to search path, useful for gf
 set path+=/usr/local/lib/python2.7/site-packages
+
+set foldmethod=indent
