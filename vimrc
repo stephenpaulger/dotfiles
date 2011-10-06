@@ -25,7 +25,7 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
-nnoremap <esc> :noh<return><esc>
+nnoremap <silent> <esc> :noh<return><esc>
 
 " == GVIM =======================================
 set guioptions-=T
