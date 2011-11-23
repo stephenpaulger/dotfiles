@@ -1,3 +1,5 @@
+set nocompatible
+
 filetype plugin on
 filetype indent on
 
@@ -25,11 +27,13 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
-nnoremap <silent> <esc> :noh<return><esc>
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
 " == GVIM =======================================
-set guioptions-=T
-colorscheme desert
+if has('gui_running')
+    set guioptions-=T
+    colorscheme desert
+endif
 
 " == XML ========================================
 ru macros/matchit.vim
