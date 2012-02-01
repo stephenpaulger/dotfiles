@@ -38,5 +38,7 @@ endif
 " == XML ========================================
 ru macros/matchit.vim
 
-" == Position Restore ===========================
+" == View Restore ===========================
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+au BufWinLeave * silent! mkview
+au BufWinEnter * silent! loadview
