@@ -2,8 +2,16 @@
 " by type :make and :cope
 set makeprg=pep8\ --ignore=E501\ %
 
-" number is for line numbering
-set number
+" Line number toggling
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
 
 " HilightCoverage plugin highlights lines lacking test coverage
 " HilightCoverage
