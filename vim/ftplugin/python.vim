@@ -12,6 +12,7 @@ function! NumberToggle()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
+set number
 
 " HilightCoverage plugin highlights lines lacking test coverage
 " HilightCoverage
