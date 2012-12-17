@@ -6,6 +6,7 @@ wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master
 
 ln -s $PWD/zshrc ~/.zshrc
 ln -s $PWD/tmux.conf ~/.tmux.conf
+ln -s $PWD/ackrc ~/.ackrc
 
 ln -s $PWD/vimrc ~/.vimrc
 mkdir -p ~/.vim/ftplugin/
