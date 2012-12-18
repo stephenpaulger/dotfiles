@@ -36,10 +36,11 @@ source ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE
 [[ -n ${key[Down]} ]] && bindkey "${key[Down]}" down-line-or-search
 [[ -n ${key[Right]} ]] && bindkey "${key[Right]}" forward-char
 
-[[ -f ~/.zsh_local ]] && source ~/.zsh_local
 
 # oh-my-zsh config
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
+ZSH_THEME="stevep"
 plugins=(git mercurial)
 source $ZSH/oh-my-zsh.sh
+
+[[ -f ~/.zsh_local ]] && source ~/.zsh_local
