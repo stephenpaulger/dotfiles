@@ -39,7 +39,7 @@ source ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE
 [[ -f ~/.zsh_local ]] && source ~/.zsh_local
 
 # oh-my-zsh config
-ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(git)
+plugins=(git mercurial)
 source $ZSH/oh-my-zsh.sh
