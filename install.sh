@@ -5,6 +5,8 @@ wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master
 [[ -f ~/.zshrc ]] && mv ~/.zshrc ~/.zsh.preconf
 
 ln -s $PWD/zshrc ~/.zshrc
+ln -s $PWD/stevep.zsh-theme ~/.oh-my-zsh/themes/
+
 ln -s $PWD/tmux.conf ~/.tmux.conf
 ln -s $PWD/ackrc ~/.ackrc
 
