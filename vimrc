@@ -1,5 +1,24 @@
-set nocompatible
+" =============================================================================
+" important
+" =============================================================================
+set nocompatible            " Disable vi compatible mode
+set pastetoggle=<F3>        " Make F3 taggle paste mode
 
+" =============================================================================
+" moving around, searching and patterns
+" =============================================================================
+set incsearch               " Incremental search
+set ignorecase              " Ignore case when searching
+set smartcase               " ...unless upper case is in search term
+
+" =============================================================================
+" displaying text
+" =============================================================================
+set scrolloff=3             " Number of lines to show around cursor
+
+" =============================================================================
+" syntax, highlighting and spelling
+" =============================================================================
 filetype plugin on
 filetype indent on
 
@@ -7,38 +26,52 @@ augroup PO
     autocmd FileType po compiler po
 augroup END
 
-" == netrw ======================================
-" Hide pyc files
-let g:netrw_list_hide='.*\.pyc$' 
+set hlsearch                " Highlight searches
+syntax on                   " Turn on syntax highlighting
 
-" == Editing ====================================
-syntax on
-set ruler
-set backspace=2
-set shiftwidth=4
-set tabstop=4
-set expandtab
-set autoindent
-set pastetoggle=<F3>
-set showmode
-
-" == Search =====================================
-set ignorecase
-set smartcase
-set incsearch
-set hlsearch
+" Ctrl-L to clear search highlight
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
-" == GVIM =======================================
+" =============================================================================
+" messages and info
+" =============================================================================
+set ruler                   " Show cursor position in status line
+set showmode                " Show the editor mode
+
+" =============================================================================
+" editing text
+" =============================================================================
+set backspace=indent,eol,start  " backspace in an intuitive way
+
+" =============================================================================
+" tabs and indenting
+" =============================================================================
+set shiftwidth=4            " Number of spaces to use for indenting
+set tabstop=4               " Number of spaces to represent tab
+set expandtab               " Convert tabs to spaces
+set autoindent              " Enabled auto-indentation
+
+" =============================================================================
+" netrw
+" =============================================================================
+let g:netrw_list_hide='.*\.pyc$' " Hide pyc files
+
+" =============================================================================
+" GVIM
+" =============================================================================
 if has('gui_running')
     set guioptions-=T
     colorscheme desert
 endif
 
-" == XML ========================================
+" =============================================================================
+" XML
+" =============================================================================
 ru macros/matchit.vim
 
-" == View Restore ===========================
+" =============================================================================
+" View Restore
+" =============================================================================
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
