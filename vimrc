@@ -2,7 +2,7 @@
 " important
 " =============================================================================
 set nocompatible            " Disable vi compatible mode
-set pastetoggle=<F3>        " Make F3 taggle paste mode
+set pastetoggle=<F3>        " Make F3 toggle paste mode
 
 " =============================================================================
 " moving around, searching and patterns
