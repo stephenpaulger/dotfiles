@@ -14,4 +14,5 @@ ln -s $PWD/vimrc ~/.vimrc
 mkdir -p ~/.vim/ftplugin/
 ln -s $PWD/vim/ftplugin/python.vim ~/.vim/ftplugin/python.vim
 
-hg clone http://bitbucket.org/sjl/hg-prompt/ ~/.hg/hg-prompt/
+mkdir ~/.hgrc.d/
+hg clone http://bitbucket.org/sjl/hg-prompt/ ~/.hgrc.d/hg-prompt/
