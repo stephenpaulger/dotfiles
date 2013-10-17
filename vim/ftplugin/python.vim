@@ -27,3 +27,4 @@ map <F5> :!python %<cr>
 set path+=/usr/local/lib/python2.7/site-packages
 
 set foldmethod=indent
+set nofen
