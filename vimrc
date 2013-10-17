@@ -19,8 +19,9 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 set autoindent
-set pastetoggle=<F3>
+set pastetoggle=<C-B>
 set showmode
+set tags=~/mytags
 
 " == Search =====================================
 set ignorecase
