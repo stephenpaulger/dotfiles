@@ -14,6 +14,7 @@ precmd ()  { print -Pn "\e]0;%n@%m: %~\a" }
 alias ll="ls -l"
 alias ls="ls --ignore=\*pyc --color"
 alias vim="vim -p"
+alias hg="nocorrect hg"
 
 alias -g diffc="colordiff|less -R"
 
@@ -36,6 +37,10 @@ source ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE
 [[ -n ${key[Down]} ]] && bindkey "${key[Down]}" down-line-or-search
 [[ -n ${key[Right]} ]] && bindkey "${key[Right]}" forward-char
 
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/venvs
+[[ -f /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 
 # oh-my-zsh config
 export ZSH=$HOME/.oh-my-zsh
