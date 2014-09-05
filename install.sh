@@ -13,6 +13,3 @@ ln -s $PWD/ackrc ~/.ackrc
 ln -s $PWD/vimrc ~/.vimrc
 mkdir -p ~/.vim/ftplugin/
 ln -s $PWD/vim/ftplugin/python.vim ~/.vim/ftplugin/python.vim
-
-mkdir ~/.hgrc.d/
-hg clone http://bitbucket.org/sjl/hg-prompt/ ~/.hgrc.d/hg-prompt/
