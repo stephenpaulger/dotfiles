@@ -76,3 +76,8 @@ ru macros/matchit.vim
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
+
+" =============================================================================
+" Encryption
+" =============================================================================
+set cryptmethod=blowfish2
