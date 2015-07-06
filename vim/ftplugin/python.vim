@@ -5,7 +5,7 @@ set makeprg=pep8\ --ignore=E501\ %
 " Line number toggling
 function! NumberToggle()
   if(&relativenumber == 1)
-    set number
+    set norelativenumber
   else
     set relativenumber
   endif
