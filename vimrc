@@ -32,6 +32,8 @@ syntax on                   " Turn on syntax highlighting
 
 " Ctrl-L to clear search highlight
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+set background=dark
+colorscheme solarized
 
 " =============================================================================
 " messages and info
@@ -62,7 +64,7 @@ let g:netrw_list_hide='.*\.pyc$' " Hide pyc files
 " =============================================================================
 if has('gui_running')
     set guioptions-=T
-    colorscheme desert
+    set background=light
 endif
 
 " =============================================================================
