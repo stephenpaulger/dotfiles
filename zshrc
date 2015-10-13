@@ -43,5 +43,6 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="stevep"
 plugins=(git mercurial)
 source $ZSH/oh-my-zsh.sh
+unsetopt share_history
 
 [[ -f ~/.zsh_local ]] && source ~/.zsh_local
