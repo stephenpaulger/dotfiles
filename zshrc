@@ -21,9 +21,6 @@ alias vim="vim -p"
 
 alias -g diffc="colordiff|less -R"
 
-alias -s html=vim
-alias -s log="tail -f"
-
 [[ -n ${key[Backspace]} ]] && bindkey "${key[Backspace]}" backward-delete-char
 [[ -n ${key[Insert]} ]] && bindkey "${key[Insert]}" overwrite-mode
 [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
