@@ -18,7 +18,6 @@ alias dc=docker-compose  # This over-rides the existing dc command, which I neve
 alias ll="ls -l"
 alias ls="ls --ignore=\*pyc --color"
 alias vim="vim -p"
-alias hg="nocorrect hg"
 
 alias -g diffc="colordiff|less -R"
 
@@ -45,7 +44,7 @@ export WORKON_HOME=$HOME/venvs
 # oh-my-zsh config
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="stevep"
-plugins=(git mercurial)
+plugins=(git)
 source $ZSH/oh-my-zsh.sh
 unsetopt share_history
 
