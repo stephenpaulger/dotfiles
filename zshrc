@@ -2,6 +2,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
+fpath=(~/.zsh/completion $fpath)
+
 zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit promptinit
