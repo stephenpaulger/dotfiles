@@ -33,6 +33,7 @@ syntax on                   " Turn on syntax highlighting
 " Ctrl-L to clear search highlight
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 set background=dark
+let g:solarized_termtrans = 1
 colorscheme solarized
 
 " =============================================================================
