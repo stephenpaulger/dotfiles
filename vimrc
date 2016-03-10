@@ -10,7 +10,7 @@ set pastetoggle=<C-B>       " Make F3 toggle paste mode
 set incsearch               " Incremental search
 set ignorecase              " Ignore case when searching
 set smartcase               " ...unless upper case is in search term
-set tags=~/mytags
+set tags=./tags;,.git/tags;
 
 " =============================================================================
 " displaying text
