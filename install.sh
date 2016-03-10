@@ -16,3 +16,6 @@ mkdir -p ~/.vim/ftplugin/ ~/.vim/colors
 ln -s $PWD/vim/ftplugin/python.vim ~/.vim/ftplugin/python.vim
 
 wget https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim -O ~/.vim/colors/solarized.vim
+
+ln -s $PWD/gitignore_global ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
