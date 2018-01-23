@@ -62,17 +62,11 @@ set completeopt-=preview
 set showmode                " Show the editor mode
 
 " =============================================================================
-" editing text
-" =============================================================================
-set backspace=indent,eol,start  " backspace in an intuitive way
-
-" =============================================================================
 " tabs and indenting
 " =============================================================================
 set shiftwidth=4            " Number of spaces to use for indenting
 set tabstop=4               " Number of spaces to represent tab
 set expandtab               " Convert tabs to spaces
-set autoindent              " Enabled auto-indentation
 
 " =============================================================================
 " netrw
