@@ -1,13 +1,32 @@
 " =============================================================================
+" vim-plug plugins
+" =============================================================================
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-commentary'
+Plug 'vimwiki/vimwiki'
+Plug 'python-mode/python-mode'
+Plug 'hashivim/vim-terraform'
+Plug 'vim-syntastic/syntastic'
+Plug 'altercation/vim-colors-solarized'
+call plug#end()
+
+" =============================================================================
 " important
 " =============================================================================
 set nocompatible            " Disable vi compatible mode
-set pastetoggle=<C-B>       " Make F3 toggle paste mode
+set pastetoggle=<C-B>       " Make Ctrl+B toggle paste mode
+
+" ============================================================================= 
+" settings for vim-commentary
+" ============================================================================= 
+autocmd FileType terraform setlocal commentstring=#%s
 
 " =============================================================================
 " moving around, searching and patterns
 " =============================================================================
-set incsearch               " Incremental search
 set ignorecase              " Ignore case when searching
 set smartcase               " ...unless upper case is in search term
 set tags=./tags;,.git/tags;
@@ -30,16 +49,16 @@ augroup END
 set hlsearch                " Highlight searches
 syntax on                   " Turn on syntax highlighting
 
-" Ctrl-L to clear search highlight
-nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 set background=dark
 let g:solarized_termtrans = 1
 colorscheme solarized
 
+" Turn off scratch preview
+set completeopt-=preview
+
 " =============================================================================
 " messages and info
 " =============================================================================
-set ruler                   " Show cursor position in status line
 set showmode                " Show the editor mode
 
 " =============================================================================
@@ -61,19 +80,6 @@ set autoindent              " Enabled auto-indentation
 let g:netrw_list_hide='.*\.pyc$' " Hide pyc files
 
 " =============================================================================
-" GVIM
-" =============================================================================
-if has('gui_running')
-    set guioptions-=T
-    set background=light
-endif
-
-" =============================================================================
-" XML
-" =============================================================================
-ru macros/matchit.vim
-
-" =============================================================================
 " View Restore
 " =============================================================================
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
@@ -84,13 +90,6 @@ au BufWinEnter * silent! loadview
 " Encryption
 " =============================================================================
 set cryptmethod=blowfish2
-
-
-" =============================================================================
-" Pathogen
-" =============================================================================
-call pathogen#infect()
-call pathogen#helptags()
 
 
 " =============================================================================
