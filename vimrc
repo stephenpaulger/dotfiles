@@ -91,3 +91,4 @@ set cryptmethod=blowfish2
 " Python
 " =============================================================================
 let g:pymode_lint_ignore="E501"
+let g:pymode_python='python3'
