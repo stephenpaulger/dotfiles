@@ -11,6 +11,7 @@ Plug 'python-mode/python-mode'
 Plug 'hashivim/vim-terraform'
 Plug 'vim-syntastic/syntastic'
 Plug 'altercation/vim-colors-solarized'
+Plug 'fatih/vim-go'
 call plug#end()
 
 " =============================================================================
