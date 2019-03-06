@@ -12,6 +12,9 @@ Plug 'hashivim/vim-terraform'
 Plug 'vim-syntastic/syntastic'
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go'
+Plug '/usr/local/opt/fzf'
+Plug 'mileszs/ack.vim'
+Plug 'chr4/nginx.vim'
 call plug#end()
 
 " =============================================================================
