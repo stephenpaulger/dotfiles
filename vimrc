@@ -15,6 +15,7 @@ Plug 'fatih/vim-go'
 Plug '/usr/local/opt/fzf'
 Plug 'mileszs/ack.vim'
 Plug 'chr4/nginx.vim'
+Plug 'ambv/black'
 call plug#end()
 
 " =============================================================================
