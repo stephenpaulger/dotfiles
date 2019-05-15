@@ -7,7 +7,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-commentary'
 Plug 'vimwiki/vimwiki'
-Plug 'python-mode/python-mode'
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'hashivim/vim-terraform'
 Plug 'vim-syntastic/syntastic'
 Plug 'altercation/vim-colors-solarized'
@@ -97,3 +97,4 @@ set cryptmethod=blowfish2
 let g:pymode_rope=0
 let g:pymode_lint_ignore="E501"
 let g:pymode_python='python3'
+let g:black_linelength=79
