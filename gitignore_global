@@ -8,6 +8,10 @@
 ##########
 .pyc
 
+# VS code #
+###########
+.vscode
+
 
 # OS generated files #
 ######################
