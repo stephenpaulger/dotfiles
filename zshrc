@@ -16,7 +16,6 @@ precmd ()  { print -Pn "\e]0;%n@%m: %~\a" }
 alias dm=docker-machine
 alias dc=docker-compose  # This over-rides the existing dc command, which I never use.
 alias ll="ls -l"
-alias ls="ls --ignore=\*pyc --color"
 alias vim="vim -p"
 
 alias -g diffc="colordiff|less -R"
