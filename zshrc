@@ -40,7 +40,7 @@ export WORKON_HOME=$HOME/venvs
 # oh-my-zsh config
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="stevep"
-plugins=(git)
+plugins=(git kubectl)
 source $ZSH/oh-my-zsh.sh
 unsetopt share_history
 
