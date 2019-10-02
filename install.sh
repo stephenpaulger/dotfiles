@@ -8,7 +8,6 @@ ln -s $PWD/zshrc ~/.zshrc
 ln -s $PWD/stevep.zsh-theme ~/.oh-my-zsh/themes/
 mkdir -p ~/.zsh/completion
 
-ln -s $PWD/tmux.conf ~/.tmux.conf
 ln -s $PWD/ackrc ~/.ackrc
 
 ln -s $PWD/vimrc ~/.vimrc
