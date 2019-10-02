@@ -25,3 +25,5 @@ Thumbs.db
 
 
 .envrc
+
+terraform.tfstate.d
