@@ -8,7 +8,7 @@ ln -s $PWD/zshrc ~/.zshrc
 ln -s $PWD/stevep.zsh-theme ~/.oh-my-zsh/themes/
 mkdir -p ~/.zsh/completion
 
-ln -s $PWD/vimrc ~/.vimrc
+ln -s $PWD/neovim ~/.config/nvim
 
 ln -s $PWD/gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
