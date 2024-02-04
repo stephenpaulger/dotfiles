@@ -1,0 +1,9 @@
+[core]
+	excludesfile = ~/.gitignore_global
+[user]
+	name = Stephen Paulger
+	email = stephenpaulger@users.noreply.github.com
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
