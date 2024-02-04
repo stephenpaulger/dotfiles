@@ -7,6 +7,7 @@
 # python #
 ##########
 .pyc
+__pycache__
 
 # VS code #
 ###########
@@ -27,3 +28,4 @@ Thumbs.db
 .envrc
 
 terraform.tfstate.d
+.tool-versions
