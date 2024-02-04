@@ -20,6 +20,7 @@ alias vim="nvim"
 
 alias -g diffc="colordiff|less -R"
 
+
 [[ -n ${key[Backspace]} ]] && bindkey "${key[Backspace]}" backward-delete-char
 [[ -n ${key[Insert]} ]] && bindkey "${key[Insert]}" overwrite-mode
 [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
@@ -37,6 +38,7 @@ alias -g diffc="colordiff|less -R"
 export WORKON_HOME=$HOME/venvs
 [[ -f /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 
+
 # oh-my-zsh config
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="stevep"
@@ -45,3 +47,5 @@ source $ZSH/oh-my-zsh.sh
 unsetopt share_history
 
 [[ -f ~/.zsh_local ]] && source ~/.zsh_local
+export PATH="/opt/homebrew/sbin:$PATH"
+eval "$(zoxide init zsh)"
