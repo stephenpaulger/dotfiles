@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'tpope/vim-fugitive'
 	use 'tpope/vim-rhubarb'
+    use 'vimwiki/vimwiki'
 
 	use {
 		'maxmx03/solarized.nvim',
@@ -15,7 +16,6 @@ return require('packer').startup(function(use)
 			vim.cmd.colorscheme 'solarized'
 		end
 	}
-
 
 	use {
 		'nvim-treesitter/nvim-treesitter',
