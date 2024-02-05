@@ -4,6 +4,9 @@
 plug "$HOME/.config/zsh/git.zsh"
 plug "$HOME/.config/zsh/homebrew.zsh"
 
+plug "wintermi/zsh-mise"
+plug "wintermi/zsh-brew"
+
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/exa"
