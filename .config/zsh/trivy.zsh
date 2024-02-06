@@ -3,7 +3,6 @@
 
 # Exit if the 'trivy' command can not be found
 if ! (( $+commands[trivy] )); then
-    echo "WARNING: 'trivy' command not found"
     return
 fi
 
