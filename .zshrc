@@ -13,6 +13,7 @@ plug "zsh-users/zsh-syntax-highlighting"
 
 plug "$HOME/.config/zsh/git.zsh"
 plug "$HOME/.config/zsh/aliases.zsh"
+plug "$HOME/.config/zsh/trivy.zsh"
 
 # Load and initialise completion system
 autoload -Uz compinit
