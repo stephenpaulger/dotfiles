@@ -19,5 +19,7 @@ plug "$HOME/.config/zsh/trivy.zsh"
 autoload -Uz compinit
 compinit
 
+export WORDCHARS=${WORDCHARS/\/}
+
 [[ -f ~/.zsh_local ]] && source ~/.zsh_local
 eval "$(zoxide init zsh)"
