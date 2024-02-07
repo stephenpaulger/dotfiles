@@ -16,6 +16,7 @@ function git_main_branch() {
 
 
 alias gc='git commit --verbose'
+alias gca='git commit --all'
 alias gcm='git checkout $(git_main_branch)'
 alias gl="git pull"
 alias gss="git status --short"
