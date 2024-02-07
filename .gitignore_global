@@ -29,3 +29,4 @@ Thumbs.db
 
 terraform.tfstate.d
 .tool-versions
+venv
