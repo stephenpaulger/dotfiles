@@ -3,7 +3,13 @@ return {
         "williamboman/mason.nvim",
         lazy = false,
         config = function()
-            require("mason").setup()
+            require("mason").setup({
+                ensure_installed = {
+                    lsp = {
+                        "gopls"
+                    }
+                }
+            })
         end,
     },
     {
@@ -21,6 +27,9 @@ return {
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
+            })
+            lspconfig.gopls.setup({
+                capabilities = capabilities
             })
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
