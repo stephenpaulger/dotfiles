@@ -16,6 +16,7 @@ plug "$HOME/.config/zsh/git.zsh"
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/trivy.zsh"
 plug "$HOME/.config/zsh/direnv.zsh"
+plug "$HOME/.config/zsh/zoxide.zsh"
 
 # Load and initialise completion system
 autoload -Uz compinit
@@ -24,4 +25,3 @@ compinit
 export WORDCHARS=${WORDCHARS/\/}
 
 [[ -f ~/.zsh_local ]] && source ~/.zsh_local
-eval "$(zoxide init zsh)"
