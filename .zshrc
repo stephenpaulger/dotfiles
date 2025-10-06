@@ -6,7 +6,6 @@ plug "wintermi/zsh-mise"
 
 plug "zap-zsh/supercharge"
 plug "amogower/exa" "606d0f9"  # waiting for this PR: https://github.com/zap-zsh/exa/pull/12
-plug "zap-zsh/zap-prompt"
 
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
