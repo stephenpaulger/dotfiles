@@ -5,11 +5,18 @@ return {
         branch = "main",
         lazy = false,
         config = function()
-            local config = require("nvim-treesitter.configs")
-            config.setup({
-                auto_install = true,
-                hightlight = { enable = true },
-                indent = { enable = true },
+            local treesitter = require("nvim-treesitter")
+            treesitter.install({
+                "c",
+                "lua",
+                "vim",
+                "vimdoc",
+                "javascript",
+                "typescript",
+                "html",
+                "yaml",
+                "python",
+                "typst",
             })
         end,
     },
