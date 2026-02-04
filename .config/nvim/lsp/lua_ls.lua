@@ -1,3 +1,4 @@
+---@type vim.lsp.Config
 return {
     -- Command and arguments to start the server.
     cmd = { 'lua-language-server' },
@@ -17,6 +18,8 @@ return {
     -- can be found here https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json
     settings = {
         Lua = {
+            codeLens = { enable = true },
+            hint = { enable = true, semicolon = 'Disable' },
             runtime = {
                 version = 'LuaJIT',
             },
