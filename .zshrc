@@ -20,7 +20,6 @@ zinit light "zsh-users/zsh-syntax-highlighting"
 zinit snippet "$HOME/.config/zsh/starship.zsh"
 zinit snippet "$HOME/.config/zsh/git.zsh"
 zinit snippet "$HOME/.config/zsh/aliases.zsh"
-zinit snippet "$HOME/.config/zsh/scorecard.zsh"
 zinit snippet "$HOME/.config/zsh/direnv.zsh"
 zinit snippet "$HOME/.config/zsh/zoxide.zsh"
 
