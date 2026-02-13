@@ -1,20 +1,28 @@
-# Created by Zap installer
-[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+# --- Initialise zinit --------------------------------------------------------
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [ ! -d $ZINIT_HOME ]; then
+    mkdir -p "$(dirname $ZINIT_HOME)"
+fi
+if [ ! -d $ZINIT_HOME/.git ]; then
+    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+source "${ZINIT_HOME}/zinit.zsh"
+# -----------------------------------------------------------------------------
 
-plug "wintermi/zsh-brew"
-plug "wintermi/zsh-mise"
+zinit light "wintermi/zsh-brew"
+zinit light "wintermi/zsh-mise"
 
-plug "zap-zsh/exa"
+zinit light "zap-zsh/exa"
 
-plug "zsh-users/zsh-autosuggestions"
-plug "zsh-users/zsh-syntax-highlighting"
+zinit light "zsh-users/zsh-autosuggestions"
+zinit light "zsh-users/zsh-syntax-highlighting"
 
-plug "$HOME/.config/zsh/starship.zsh"
-plug "$HOME/.config/zsh/git.zsh"
-plug "$HOME/.config/zsh/aliases.zsh"
-plug "$HOME/.config/zsh/scorecard.zsh"
-plug "$HOME/.config/zsh/direnv.zsh"
-plug "$HOME/.config/zsh/zoxide.zsh"
+zinit snippet "$HOME/.config/zsh/starship.zsh"
+zinit snippet "$HOME/.config/zsh/git.zsh"
+zinit snippet "$HOME/.config/zsh/aliases.zsh"
+zinit snippet "$HOME/.config/zsh/scorecard.zsh"
+zinit snippet "$HOME/.config/zsh/direnv.zsh"
+zinit snippet "$HOME/.config/zsh/zoxide.zsh"
 
 # Load and initialise completion system
 autoload -Uz compinit
