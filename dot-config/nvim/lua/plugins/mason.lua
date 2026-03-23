@@ -6,6 +6,7 @@ return {
                 "tinymist",
                 "typstyle",
                 "lua-language-server",
+                "gopls",
             },
         },
     },

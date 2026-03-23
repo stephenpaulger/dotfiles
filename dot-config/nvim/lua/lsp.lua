@@ -2,6 +2,7 @@ vim.lsp.enable({
     'lua_ls',
     'ruff',
     'tinymist',
+    'gopls',
 })
 
 vim.diagnostic.config(
