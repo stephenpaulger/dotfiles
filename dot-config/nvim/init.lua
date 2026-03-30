@@ -2,4 +2,4 @@ require("lsp")
 require("remap")
 require("set")
 
-require("lazyinit")
+require("packages")
