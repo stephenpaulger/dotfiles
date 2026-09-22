@@ -3,6 +3,7 @@ vim.lsp.enable({
     'ruff',
     'tinymist',
     'gopls',
+    'jinja',
 })
 
 vim.diagnostic.config(
